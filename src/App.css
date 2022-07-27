@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    gap: 1rem;
+}
+
+.home img {
+
+    height: 100px;
+}
+
+.cardHome {
+    background-color: #d19f2a86;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: .5rem;
+    border-radius: 1rem;
+    width: 260px;
+    height: 230px;
+}
+
+.containerPokedex {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.pokedex {
+    width: 200px;
+}
+
+.pokebola {
+    position: fixed;
+    width: 250px;
+    right: -100px;
+    top: -40px;
+   
+    animation: circular 3s infinite;
+    opacity: .3;
+}
+
+@keyframes circular {  
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.selectShearch {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.switch{
+    width: 50px;
+    height: 25px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.slider{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.sliderRigth{
+    transform: translate(26px);
+    transition: 0.4s;
+}
+
+.sliderLeft{
+    transform: translate(0);
+    transition: 0.4s;
+}
+
+select{
+    background-color: rgba(236, 226, 226, 0.562);
+    border: none;
+    width: 200px;
+    height: 35px;
+    box-shadow: 1px 3px 2px 4px rgba(134, 125, 125, 0.562);
+    border-radius: .5rem;
+    padding:.5rem;
+    font-weight: bold;
+    color: rgba(134, 125, 125, 0.753);
+}
+
+select option{
+    background-color: rgba(236, 226, 226, 0.562);
+}
+
+.inputName {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.inputName input {
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    color: #d19f2afa;
+    width: 250px;
+}
+
+.btn {
+    border: none;
+    background: transparent;
+}
+
+.btn img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 1.5rem;
+    z-index: 50;
+}
+
+.cardPokemon {    
+    width: 250px;
+    height: 225px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.itemDetail{
+    display: flex;
+    gap: 1rem;    
+}
+
+.textDetail{
+    text-align: start;
+}
+
+.textDetail p{
+    background-color: rgba(255, 255, 255, 0.123);
+    padding: 10px 30px 0 10px;
+    margin-bottom: 5px;
+    border-radius: 1rem;
+}
+
+.imgDetail{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgDetail img{
+    width: 80px;
+    height: 100px;    
+}
+
+.setting{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.setting i{
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+.setting .container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.fa-gear{
+    background-color: #6c79db;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 28px;
+    right: 5px;
+}
+
+.fa-gear:hover{
+    transition: .5s;
+    animation: settingRotate 1s linear;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@keyframes settingRotate {
+    0%{
+        transform: rotate(-180deg);
+    }
+}
+
+.setting .container .itemsPage{
+    width: 250px;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.4);
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.itemsPerPage{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.itemsPerPage i{
+    color: #ffbb00;
+    cursor: pointer;
+}
+
+.itemsPerPage i:hover{
+    color: #03a9f4;
+}
+
+.itemsPerPage div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffbb00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.itemsPerPage div:hover{
+background-color:  #03a9f4; 
+}
+
+.itemsPerPage span{
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.detailsPoke{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;    
+    gap: 1rem;
+}
+
+.detailsPoke img{
+    width: 100px;
+    
+}
+
+.detailsPoke .pokeImg{
+    position: absolute;
+    left: 1in;
+    top: 1.3in;
+}
+
+.detailsPoke .divDatos{
+    width: 250px;
+    padding-bottom: 10px;
+    border-radius: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.2rem;
+    margin-top: .9in;
+}
+
+.tallaPoke{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tallaPoke div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tallaPoke div span{
+    color: #d5d5d5;
+}
+
+.detailsPoke .type{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.detailsPoke .type div{
+    width: 250px;    
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailsPoke .type div .typePoke{
+    width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.detailsPoke .ability{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.detailsPoke .ability div{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.detailsPoke .ability div>div{
+    border: 1px solid lightgray;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    color: lightgray;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.detailsPoke .stats{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 250px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.detailsPoke .stats .divStats span{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.detailsPoke .stats .divStats{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 15px;    
+}
+
+.detailsPoke .stats .divStats>div{
+    background-color: lightgrey;
+    width: 150px;
+    display: flex;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.detailsPoke .stats .divStats>div>.baseStats{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.detailsPoke .stats .divStats>div>div{
+    background-color: #f2c98e;
+}
+
+.detailsPoke .moves{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 250px;
+    overflow-y: scroll;
+    height: 150px;
+}
+
+
+.detailsPoke .moves .movePoke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.detailsPoke .moves .movePoke span{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 5px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.otrosDatos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width:450px) {
+    .detailsPoke{        
+        padding: 1in;
+        align-items: center;
+    }
+
+    .detailsPoke .fa-arrow-left{
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        left: .4in;
+        top: .5in;        
+    }
+    
+    .detailsPoke .imgLogo{
+        width: 200px;
+        position: absolute;
+        left: .6in; 
+        top: .7in;      
+     }
+     .detailsPoke .pokeImg{
+        position: relative;
+        left: 0;
+        top: 1in;    
+        width: 200px;    
+    }
+
+    .detailsPoke .divDatos{
+        width: 100%;
+        margin-top: 3rem;        
+    }
+
+    .spaceDiv{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .detailsPoke{        
+        padding: 1in;
+        align-items: center;
+    }
+
+    .detailsPoke .fa-arrow-left{
+        font-size: 35px;
+        cursor: pointer;
+        position: absolute;
+        left: .6in;        
+    }
+
+    .detailsPoke .imgLogo{
+       width: 250px;
+       position: absolute;
+       left: .6in; 
+       top: 1.4in;      
+    }
+    
+    .detailsPoke .pokeImg{
+        position: relative;
+        left: 0;
+        top: 1.5in;    
+        width: 400px;    
+    }
+
+    .pokebola{
+        width: 500px;
+        right: -2in;
+    }
+
+    .detailsPoke .divDatos{
+        width: 700px;
+        margin-top: 4rem;        
+    }
+
+    .detailsPoke .divDatos .tallaPoke{
+        width: 100%;
+        font-size: 20px;
+    }
+    .otrosDatos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 700px;
+        justify-content: space-around;
+    }
+
+    .otrosDatos .moves{
+        height: 230px;
+    }
+}
+
