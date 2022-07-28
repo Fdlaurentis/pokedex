@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import backgroundCard from '../utils/backgroundCard';
-import pokemonLogo from '"../images/Pokemon-Logo.png"'
+import pokemonLogo from '../images/Pokemon-Logo.png'
 
 const PokemonDetail = () => {
 

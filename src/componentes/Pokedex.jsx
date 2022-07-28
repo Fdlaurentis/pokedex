@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import {useSelector} from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import PokemonList from './PokemonList';
-import pokedex from '"../images/pokedex.png"'
+import pokedex from '../images/pokedex.png'
 
 
 const Pokedex = () => {
