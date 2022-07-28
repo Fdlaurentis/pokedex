@@ -10,9 +10,9 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/fondo.jpg');
+    background-image: url('../src/images/fondo.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size:auto;
     gap: 1rem;
 }
 

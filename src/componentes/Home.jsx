@@ -4,7 +4,8 @@ import { changeUser } from '../store/slices/userName.slice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import pokebola from '../images/pokebola.png'
-
+import ash from '../images/ash.png'
+import misty from '../images/misty.png'
 
 const Home = () => {
     const [userName, setUserName] = useState("")
@@ -17,11 +18,11 @@ const Home = () => {
     const imgSex = () => {
         if (selectSex === 'female') {
             return (
-                <img src="./images/misty.png" />
+                <img src={misty} />
             )
         } else if (selectSex === 'male') {
             return (
-                <img src="./images/ash.png" />
+                <img src={ash} />
             )
         }
     }
