@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { changeUser } from '../store/slices/userName.slice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import pokebola from '../images/pokebola.png'
+
 
 const Home = () => {
     const [userName, setUserName] = useState("")
@@ -66,7 +68,7 @@ const Home = () => {
                                 value={userName}
                                 onChange={e => setUserName(e.target.value)}
                             />
-                            <button className='btn'><img src="./images/pokebola.png" /></button>
+                            <button className='btn'><img src={pokebola} /></button>
                         </div>
                     </form>
 
