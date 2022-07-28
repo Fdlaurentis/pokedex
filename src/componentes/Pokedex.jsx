@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import {useSelector} from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import PokemonList from './PokemonList';
+import pokedex from '"../images/pokedex.png"'
 
 
 const Pokedex = () => {
@@ -62,7 +63,7 @@ const Pokedex = () => {
         <div className='containerPokedex'>
             <i className="fa-solid fa-gear" onClick={()=>{navigate('/pokedex/setting')}}></i>
             
-            <img src="../images/pokedex.png" className='pokedex'/>
+            <img src={pokedex} className='pokedex'/>
             <h2>Welcome {user}, here you can find your favorite pokemon</h2>
             <div className="selectShearch">
                 <h4>Type</h4>

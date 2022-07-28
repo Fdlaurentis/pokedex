@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import backgroundCard from '../utils/backgroundCard';
+import pokemonLogo from '"../images/Pokemon-Logo.png"'
 
 const PokemonDetail = () => {
 
@@ -22,7 +23,7 @@ const PokemonDetail = () => {
 
             <i className="fa-solid fa-arrow-left" onClick={() => { navigate(-1) }}></i>
 
-            <img className='imgLogo' src="./images/Pokemon-Logo.png" />
+            <img className='imgLogo' src={pokemonLogo} />
             <img className='pokeImg' src={pokemon?.sprites?.other?.dream_world?.front_default === null ? pokemon?.sprites?.other?.home?.front_default : pokemon?.sprites?.other?.dream_world?.front_default} />
             <div className='divDatos '>
                 <div className="tallaPoke">
