@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { selectItem } from '../store/slices/itemsPage.slice';
+import pokedexImg from '../images/pokedex.png'
 
 const Setting = () => {
 
@@ -16,7 +17,7 @@ const Setting = () => {
         <div className='setting'>
             <i className="fa-solid fa-arrow-left" onClick={() => { navigate(-1) }}></i>
             <div className='container'>
-                <img src="../images/pokedex.png" className='pokedex' />
+                <img src={pokedexImg} className='pokedex' />
                 <h1>Settings</h1>
                 <div className='itemsPage'>
                     <h2>Items per page</h2>
